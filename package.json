@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "test": "jest",
-    "start": "node server/index.js",
+    "start": "concurrently \"npm run server\" \"npm run dev\"",
     "server": "nodemon index.js", 
     "dev:all": "concurrently \"npm run server\" \"npm run dev\""
   },
