@@ -4,8 +4,7 @@
   "version": "0.0.0",
   "type": "commonjs",
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"npm start\"",
-    "server": "nodemon server/index.js",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "test": "jest",
