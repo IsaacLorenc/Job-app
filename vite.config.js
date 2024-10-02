@@ -1,13 +1,14 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
+export default {
   server: {
-    host: '0.0.0.0',
-    port: process.env.PORT || 5173, // Render will provide the port via an environment variable
+    hmr: {
+      host: 'job-app-70wg.onrender.com',  // e.g., 'job-app-70wg.onrender.com'
+      protocol: 'wss',
+      port: 443,  // Standard WebSocket over HTTPS
+    }
+  },
+  preview: {
+    port: process.env.PORT || 5317  // Ensure your production server listens on the correct port
   }
-})
+};
 
 
