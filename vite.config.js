@@ -6,9 +6,5 @@ export default {
       port: 443,  // Standard WebSocket over HTTPS
     }
   },
-  preview: {
-    port: process.env.PORT || 5317  // Ensure your production server listens on the correct port
-  }
-};
 
 
