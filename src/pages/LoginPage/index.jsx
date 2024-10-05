@@ -15,7 +15,7 @@ const Login = ({ onLogin }) => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:5173/api/auth";
+			const url = "/api/auth";
 			const { data: res } = await axios.post(url, data);
 			localStorage.setItem("token", res.data);
 			onLogin(); // Call the onLogin function passed from App.jsx
