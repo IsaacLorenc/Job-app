@@ -10,6 +10,6 @@ module.exports = {
     transformIgnorePatterns: [
         '/node_modules/(?!node-fetch|whatwg-url)' // Add other ESM packages as needed
     ],
-    setupFilesAfterEnv: ["<rootDir>/src/setupTests.js"],
+    setupFilesAfterEnv: ["<rootDir>/setupTests.js"],
     
 };
